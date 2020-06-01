@@ -238,7 +238,7 @@ areAllMagicNums list = and[isMagicNum x\\x<-list]
 
 
 ///Da yo question warky extra ya kha v, mara 
-//This is question was not inculded in the exam
+//This question was not inculded in the exam
 /*
 Insert x as second element in every sublist of a list.
 If the sublist was empty then x will be the only element in the new sublist.
