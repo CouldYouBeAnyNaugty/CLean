@@ -79,6 +79,16 @@ subst list = ['s'\\x<-list | x<=5] ++ ['g'\\x<- list | x>5]
 /*____________________________________________________________________________________________________________________________________________________*/
 
 
+/*Given a list of Int.
+Write a function which will calculate the sum of the squares of 
+only the even numbers from that list*/
+sumPowerEven :: [Int] -> Int
+sumPowerEven list = sum[x^2\\x<-list | isEven(x^2)]
 
+//Start = sumPowerEven [1..10]
+//Start=sumPowerEven [1..5]//20 =2^2+4^2
+//Start=sumPowerEven [2,2,2,2]//16
+//Start=sumPowerEven [1,3,5]//0
+//Start=sumPowerEven []//0
 
 
