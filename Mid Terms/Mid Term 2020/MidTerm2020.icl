@@ -127,10 +127,10 @@ i.e : 9 is a perfect square since 3^2 = 9
 */
 
 
-///Well, in mathematics the number zero is not an integer number 
+///Well, in mathematics the number zero is not an natural number 
 
 isInt num 
-| toReal num == 0.0 = False 
+| toReal num < 0.0 = False 
 = toReal num == toReal (toInt (toReal num))
 //Start = toReal 2.3 == toReal(toInt(toReal 2.3))
 //Start = isInt 2 //True 
@@ -138,7 +138,7 @@ isInt num
 
 //Start = isInt 0
 isNat num 
-| toReal num < 0.0 = False 
+| toReal num <= 0.0 = False 
 = toReal num == toReal (toInt (toReal num))
 
 
